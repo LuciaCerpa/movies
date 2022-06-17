@@ -36,16 +36,16 @@ const Login = () => {
             swAlert(<h2>Credenciales inválidas</h2>);
             return;
         }
-        swAlert(<h3>We´ll send the information</h3>)
+        
 
 
         axios
             .post('http://challenge-react.alkemy.org', { email, password })
             .then(res => {
-                swAlert("Perfecto", "Ingresaste Correctamente", "success")
-                console.log(res.data)
-                const tokenRecibido = res.data.token;
-                sessionStorage.setItem('token',tokenRecibido)
+                // swAlert("Perfecto", "Ingresaste Correctamente", "success")
+                // console.log(res.data)
+                // const tokenRecibido = res.data.token;
+                // sessionStorage.setItem('token',tokenRecibido)
                 navigate("/listado")
             })
 
@@ -76,7 +76,7 @@ const Login = () => {
                 placeholder='password'
             />
             <br />
-            <button type='submit'>Longin</button>
+            <button type='submit'>Login</button>
             </div>
         </form>
         </div>
