@@ -24,30 +24,27 @@ const Login = () => {
             )
             // console.log("Los campos no pueden estar vacios")
             return;
-        }
-
-        if (email !== "" && !regexEmail.test(email)) {
+        }else if (email !== "" && !regexEmail.test(email)) {
             swAlert(<h2>Debes escribir una dirección de correo electrónico válida</h2>)
             
-            return;
-        }
-
-        if (email !== 'challenge@alkemy.org' || password !== 'react') {
+        }else if (email !== 'challenge@alkemy.org' || password !== 'react') {
             swAlert(<h2>Credenciales inválidas</h2>);
             return;
+        }else if(email === 'challenge@alkemy.org' && password !== 'react')
+            navigate("/listado")
         }
         
 
 
-        axios
-            .post('http://challenge-react.alkemy.org', { email, password })
-            .then(res => {
-                // swAlert("Perfecto", "Ingresaste Correctamente", "success")
-                // console.log(res.data)
-                // const tokenRecibido = res.data.token;
-                // sessionStorage.setItem('token',tokenRecibido)
-                navigate("/listado")
-            })
+        // axios
+        //     .post('http://challenge-react.alkemy.org', { email, password })
+        //     .then(res => {
+        //          swAlert("Perfecto", "Ingresaste Correctamente", "success")
+        //         // console.log(res.data)
+        //          const tokenRecibido = res.data.token;
+        //          sessionStorage.setItem('token',tokenRecibido)
+               
+        //     })
 
          
     }
