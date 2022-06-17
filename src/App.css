@@ -1,38 +1,134 @@
-.App {
-  text-align: center;
+
+
+.buttonFavorites{
+    width: 30px;
+    height: 30px;
+    background-color: antiquewhite;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    border: none;
+    font-size: 13px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.overlay{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(118, 96, 96);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.esposa{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.esposa img{
+    width: 50%;
+    height: 60%;
 }
 
-.App-link {
-  color: #61dafb;
+.credentials{
+    color: gray;
+    border: 1px solid gray;
+    text-align: center;
+    margin-top: 1rem;
+    padding: 1rem;
+}
+.credentials p{
+    margin: 0px;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card{
+    margin-top: 5rem;
+    width: 15rem;
 }
+
+.movieD{
+    background-color: rgb(22, 14, 14);
+    color: orange;
+}
+
+.movie{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    padding: 1rem;
+}
+
+.movie img{
+    width: 80%;
+}
+
+.container form div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+}
+
+.container h2{
+    padding-top: 5rem;
+}
+
+.container input{
+    margin: 1rem;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: orangered;
+}
+
+.container button{
+    border-radius: 1rem;
+    width: 80%;
+    margin-top: .50rem;
+    
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: aliceblue;    
+    background-color: rgb(35, 35, 35);
+    width: 110%;
+    margin-top: 3rem;
+    padding: 0px;
+    position: relative;
+    bottom: 0px;
+    left: -1rem;
+}
+
+.footer ul{
+    list-style: none;
+    padding-top: 1rem;
+}
+.footer a{
+    text-decoration: none;
+    cursor: pointer;
+    color: aliceblue;
+}
+
